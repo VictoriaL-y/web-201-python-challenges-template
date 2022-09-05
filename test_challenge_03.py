@@ -15,7 +15,9 @@
 # Notes: Consider a month has 30 days.
 
 def wash_hands(n, m):
-    pass
+    washing_minutes =  round((n * 21 * 30 * m) / 60)
+    washing_secondes = (n * 21 * 30 * m) - washing_minutes * 60
+    return str(washing_minutes) + " minutes and " + str(washing_secondes) + " seconds"
 
 def test_challenge_03_case_1(): 
     assert wash_hands(8, 7) == '588 minutes and 0 seconds'

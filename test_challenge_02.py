@@ -6,7 +6,10 @@
 # it should return "112233aa!!".
 
 def duplicate_characters(str):
-    pass
+    newWord = ""
+    for letter in str:
+        newWord = newWord + letter * 2
+    return newWord
 
 def test_challenge_02_case_1(): 
      assert duplicate_characters('now') == 'nnooww'
